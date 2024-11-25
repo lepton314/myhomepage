@@ -1,0 +1,14 @@
+[default]
+address = "0.0.0.0"    # サーバーがリッスンするアドレス。0.0.0.0はすべてのインターフェースをリッスン
+port = 80              # 使用するポート番号
+log_level = "normal"   # ログレベル (off, critical, normal, debug, trace)
+
+[debug]
+address = "127.0.0.1"  # デバッグモードでのリッスンアドレス（通常ローカルのみ）
+port = 8000            # デバッグモードでのポート番号
+log_level = "debug"    # デバッグモードでのログレベル
+
+[release]
+address = "0.0.0.0"    # リリースモードでは外部からもアクセス可能に
+port = 80              # リリースモードでのポート番号
+log_level = "critical" # リリースモードでの最低限のログ出力
