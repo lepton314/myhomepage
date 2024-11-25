@@ -3,28 +3,30 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My Personal Page</title>
+  <title>lepton's my Page</title>
+  <!-- Bootstrap 5 CDN -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
   <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-  <header>
-    <h1>My Personal Page</h1>
-    <nav>
-      <ul>
-        <li><a href="#about">About Me</a></li>
-        <li><a href="#services">Services</a></li>
-        <li><a href="#contact">Contact</a></li>
+<body class="d-flex flex-column" style="min-height: 100vh;">
+  <header class="bg-dark text-white py-3 text-center">
+    <h1>NostalgicPlace</h1>
+    <!--<nav>
+      <ul class="list-unstyled d-flex justify-content-center">
+        <li class="mx-2"><a href="#about" class="text-white text-decoration-none">About Me</a></li>
+        <li class="mx-2"><a href="#services" class="text-white text-decoration-none">Services</a></li>
+        <li class="mx-2"><a href="#contact" class="text-white text-decoration-none">Contact</a></li>
       </ul>
-    </nav>
+    </nav>-->
   </header>
 
-  <main>
-    <section id="about">
+  <main class="flex-grow-1">
+    <section id="about" class="container mt-4">
       <h2>About Me</h2>
-      <p>もふもふの生き物が好きなバイク乗りです。</p>
+      <p>もふもふの生き物が好きなバイク乗りです。<br>愛車はHusqvarna・SVARTPILEN 401</p>
     </section>
 
-    <section id="services">
+    <section id="services" class="container mt-4">
       <h2>色々なリンク</h2>
       <ul>
         <li><a href="https://x.com/VrLepton" target="_blank">Twitter</a></li>
@@ -34,8 +36,12 @@
     </section>
   </main>
 
-  <footer>
-    <p>&copy; 2024 My Personal Page</p>
+  <footer class="bg-dark text-white text-center py-3 mt-auto">
+    <p>&copy; 2024 My Page</p>
   </footer>
+
+  <!-- Bootstrap JS, Popper.js, and jQuery (if necessary) -->
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.min.js"></script>
 </body>
 </html>
